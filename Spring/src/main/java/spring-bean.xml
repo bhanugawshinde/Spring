@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- bean definitions here -->
+	<bean id="creaditCard" class="in.ashokit.CreditCard" />
+	<bean id="debitCard" class="in.ashokit.DebitCard" />
+	<bean id="upi" class="in.ashokit.UPIPayment" />
+	<bean id="billCollector" class="in.ashokit.BillPayment">
+		<property name="iPayment" ref="upi" />
+	</bean>
+</beans>
