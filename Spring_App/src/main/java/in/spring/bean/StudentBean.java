@@ -3,7 +3,7 @@ package in.spring.bean;
 public class StudentBean {
 	private String name;
 	private int age;
-	private String cource;
+	private String course;
 	
 	public StudentBean() {
 		super();
@@ -11,11 +11,11 @@ public class StudentBean {
 	}
 	
 	
-	public StudentBean(String name, int age, String cource) {
+	public StudentBean(String name, int age, String course) {
 		super();
 		this.name = name;
 		this.age = age;
-		this.cource = cource;
+		this.course = course;
 	}
 
 
@@ -31,17 +31,17 @@ public class StudentBean {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public String getCource() {
-		return cource;
+	public String getCourse() {
+		return course;
 	}
-	public void setCource(String cource) {
-		this.cource = cource;
+	public void setCourse(String cource) {
+		this.course = cource;
 	}
 
 
 	@Override
 	public String toString() {
-		return "StudentBean [name=" + name + ", age=" + age + ", cource=" + cource + "]";
+		return "StudentBean [name=" + name + ", age=" + age + ", cource=" + course + "]";
 	}
 	
 	
