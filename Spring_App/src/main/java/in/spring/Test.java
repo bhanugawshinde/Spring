@@ -3,10 +3,13 @@ package in.spring;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import in.spring.bean.StudentBean;
+
 public class Test {
 	public static void main(String[] args) {
 		ApplicationContext context = 
         		new ClassPathXmlApplicationContext("spring-bean.xml");
-		System.out.print(context);
+		StudentBean bean = context.getBean("student", StudentBean.class);
+		System.out.println(bean);
 	}
 }
