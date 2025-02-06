@@ -3,21 +3,20 @@ package in.spring.bean;
 public class StudentBean {
 	private String name;
 	private int age;
-	private String cource;
+	private String course;
 	
 	public StudentBean() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	
-	
-	public StudentBean(String name, int age, String cource) {
+
+	public StudentBean(String name, int age, String course) {
 		super();
 		this.name = name;
 		this.age = age;
-		this.cource = cource;
+		this.course = course;
 	}
-
 
 	public String getName() {
 		return name;
@@ -31,19 +30,19 @@ public class StudentBean {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public String getCource() {
-		return cource;
+
+	public String getCourse() {
+		return course;
 	}
-	public void setCource(String cource) {
-		this.cource = cource;
+
+	public void setCourse(String course) {
+		this.course = course;
 	}
 
 
 	@Override
 	public String toString() {
-		return "StudentBean [name=" + name + ", age=" + age + ", cource=" + cource + "]";
+		return "StudentBean [name=" + name + ", age=" + age + ", course=" + course + "]";
 	}
-	
-	
 	
 }

@@ -5,8 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="student" class="in.spring.bean.StudentBean" >
-		<property name="name" value="Student 1"></property>
-		<property name="age" value="20"></property>
-		<property name="course" value="Course"></property>
+		<constructor-arg name="name" value="Student 2"></constructor-arg>
+		<constructor-arg name="age" value="22"></constructor-arg>
+		<constructor-arg name="course" value="Course 2"></constructor-arg>
 	</bean>
 </beans>
